@@ -5,7 +5,7 @@ Look no further!
 
 This is a collection of scripts that help you organize your files.
 
-## Example Usage
+## Usage & Installation
 
 ### Run in current directory
 
@@ -27,7 +27,7 @@ $ organize-all.sh ~/Downloads
 $ organize-archives.sh ~/Downloads
 ```
 
-## Install to your `bin` directory in PATH (optional)
+### Install to your `bin` directory in PATH (optional)
 
 ```bash
 ./install.sh ~/bin
