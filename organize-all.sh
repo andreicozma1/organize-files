@@ -16,7 +16,7 @@ echo
 echo "-----------------------------------------------------"
 echo "# Creating backup..."
 PATH_ROOT_NAME="$(basename "$PATH_ROOT")"
-zip -r "$PATH_ROOT/$PATH_ROOT_NAME-backup.zip.bak" "$PATH_ROOT"
+zip -r "$PATH_ROOT/$PATH_ROOT_NAME-backup.zip.bak" "$PATH_ROOT" || exit 1
 echo "-----------------------------------------------------"
 
 SCRIPT_ARCHIVES="organize-archives"
