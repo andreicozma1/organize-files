@@ -10,11 +10,11 @@ if [ -z "$PATH_ROOT" ]; then
 	PATH_ROOT="$PWD"
 fi
 
-echo "========================================================"
+echo "==========================================================="
 echo "# Organizing archive files..."
-echo "========================================================"
+echo "==========================================================="
 
-echo "# Creating directories..."
+
 
 PATH_PROGRAMS="$PATH_ROOT/programs"
 mkdir -pv "$PATH_PROGRAMS"
@@ -30,4 +30,4 @@ $PATH_MOVE_SCRIPT "*.dmg" "$PATH_PROGRAMS/dmg"
 $PATH_MOVE_SCRIPT "*.AppImage" "$PATH_PROGRAMS/AppImage"
 ##############################################################
 
-echo "======================== DONE! ========================"
+echo "========================== DONE! =========================="

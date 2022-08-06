@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATTERN="$3"
+PATTERN="$1"
 TARGET_PATH="$2"
 
 # Check if both $PATTERN and $TARGET_PATH are set
@@ -9,7 +9,7 @@ if [ -z "$PATTERN" ] || [ -z "$TARGET_PATH" ]; then
     exit 0
 fi
 
-echo "-------------------------------------------------------"
+echo "-------------------------------------------------"
 mkdir -pv "$TARGET_PATH"
 echo "# Moving $PATTERN => $TARGET_PATH"
 mv -iv $PATTERN "$TARGET_PATH"
