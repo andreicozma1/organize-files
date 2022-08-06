@@ -14,8 +14,6 @@ echo "==========================================================="
 echo "# Organizing archive files..."
 echo "==========================================================="
 
-
-
 PATH_MEDIA="$PATH_ROOT/media"
 mkdir -pv "$PATH_MEDIA"
 echo "# Base Path: $PATH_MEDIA"
@@ -39,4 +37,3 @@ $PATH_MOVE_SCRIPT "*.gif" "$PATH_MEDIA/image"
 ##############################################################
 
 echo "========================== DONE! =========================="
-

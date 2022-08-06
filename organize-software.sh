@@ -14,8 +14,6 @@ echo "==========================================================="
 echo "# Organizing archive files..."
 echo "==========================================================="
 
-
-
 PATH_PROGRAMS="$PATH_ROOT/programs"
 mkdir -pv "$PATH_PROGRAMS"
 echo "# Base Path: $PATH_PROGRAMS"

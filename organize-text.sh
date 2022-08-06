@@ -14,8 +14,6 @@ echo "==========================================================="
 echo "# Organizing archive files..."
 echo "==========================================================="
 
-
-
 PATH_TEXT="$PATH_ROOT/text"
 mkdir -pv "$PATH_TEXT"
 echo "# Base Path: $PATH_TEXT"
