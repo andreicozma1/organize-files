@@ -14,6 +14,9 @@ mkdir -pv "$TARGET_PATH"
 echo "# Moving $PATTERN => $TARGET_PATH"
 mv -iv $PATTERN "$TARGET_PATH"
 
+# Recursively look for all files matching pattern and move them to target path
+# find . -type f -name "$PATTERN" -exec mv -iv {} "$TARGET_PATH" \;
+
 RETURN_CODE=$?
 # echo "Return code: $RETURN_CODE"
 if [ $RETURN_CODE -eq 1 ]; then

@@ -13,6 +13,13 @@ echo "================================================================="
 echo "# Base Path: $PATH_ROOT"
 echo
 
+echo "-----------------------------------------------------"
+echo "# Creating backup..."
+PATH_ROOT_NAME="$(basename "$PATH_ROOT")"
+zip -r "$PATH_ROOT_NAME-backup.zip.bak" "$PATH_ROOT"
+echo "-----------------------------------------------------"
+
+
 SCRIPT_ARCHIVES="organize-archives"
 if ! [ -x "$(command -v $SCRIPT_ARCHIVES)" ]; then
 	SCRIPT_ARCHIVES="./organize-archives.sh"
