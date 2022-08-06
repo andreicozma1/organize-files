@@ -13,3 +13,9 @@ echo "-------------------------------------------------"
 mkdir -pv "$TARGET_PATH"
 echo "# Moving $PATTERN => $TARGET_PATH"
 mv -iv $PATTERN "$TARGET_PATH"
+
+RETURN_CODE=$?
+# echo "Return code: $RETURN_CODE"
+if [ $RETURN_CODE -eq 1 ]; then
+    echo "SKIPPED: No files found matching $PATTERN"
+fi
