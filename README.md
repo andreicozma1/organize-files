@@ -42,4 +42,6 @@ $ organize-all
 
 ## Backups
 
-The `organize-all.sh` script will create a backup of the original files in the provided directory.
+The `organize-all.sh` script will create a backup of the original files in the provided directory. This requires that you have `zip` installed.
+
+The backup ZIP file will be named `<directory name>.zip.bak`.
